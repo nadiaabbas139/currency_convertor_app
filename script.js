@@ -1,7 +1,7 @@
     async function convertCurrency() {
-      const input_amount = document.getElementById("amount");
+      let input_amount = document.getElementById("amount");
       const from_currency = document.getElementById("fromCurrency").value;
-      const to_currency = document.getElementById("ToCurrency").value;
+      const to_currency = document.getElementById("toCurrency").value;
       const result_div = document.getElementById("result");
 
       const amount = input_amount.value;
@@ -27,4 +27,6 @@
       } catch (err) {
         result_div.innerHTML = " Error fetching exchange rates.";
       }
+
+      input_amount.value=""
     }
