@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="converter">
-    <h2>💱 Currency Converter</h2>
+    <h2> Currency Converter</h2>
     <input type="number" id="amount" placeholder="Enter amount " />
 
     <label for="fromCurrency">From Currency</label>
@@ -37,7 +37,7 @@
         <option value="EGP">Egyptian Pound (EGP)</option>
     </select>
 
-    <label for="toCurrency">choose currency </label>
+    <label for="toCurrency">To Currency </label>
     <select id="toCurrency">
 
         <option value="PKR">Pakistani Rupee (PKR)</option>
@@ -63,5 +63,8 @@
     </select>
     <button onclick="convertCurrency()">Convert</button>
     <div id="result"></div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
